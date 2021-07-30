@@ -30,7 +30,7 @@ export default function Product({
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon className='h-5 text-yellow-500' />
+            <StarIcon className='h-5 text-yellow-500' key={id} />
           ))}
       </div>
       <p className='text-xs my-2 line-clamp-2'>{description}</p>
